@@ -1,7 +1,11 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ShopItemService } from './shop-item.service';
+import { IdentityApiKeyGuard } from 'utils/security/identity-api-gurad';
+
+
 
 @Controller('shop-item/fun-shop')
+@UseGuards(IdentityApiKeyGuard)
 export class ShopItemController {
 
     constructor(private readonly shopItemService: ShopItemService) { }

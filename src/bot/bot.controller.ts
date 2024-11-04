@@ -1,9 +1,11 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { BotService } from './bot.service';
 import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
+import { IdentityApiKeyGuard } from 'utils/security/identity-api-gurad';
 
 @Controller('bot')
+@UseGuards(IdentityApiKeyGuard)
 export class BotController {
 
     constructor(private readonly botService: BotService) { }
