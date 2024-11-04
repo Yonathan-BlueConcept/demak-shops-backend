@@ -15,6 +15,7 @@ export class BotController {
 
     @Post('/send-items')
     sendItems(@Body() itemList: ItemsListDto,) {
+        
         return this.botService.sendItems(itemList)
     }
 

@@ -22,12 +22,15 @@ export class Bot {
 
 
   async sendItem(item: ItemDto) {
-    await bot.telegram.sendMessage(devin, `
+   
+   const sendResult =  await bot.telegram.sendMessage(devin, `
     client wants to buy the following things
     title:  ${item.title}
     price:  ${item.price}
     phoneNumber: ${item.phoneNumber}
     `);
+
+    return sendResult;
   }
 
 
@@ -44,12 +47,14 @@ export class Bot {
     })
 
 
-    await bot.telegram.sendMessage(devin, `
+  const sendResult =   await bot.telegram.sendMessage(devin, `
       client wants to buy the following things
       
       ${titleAndPrice}
       phoneNumber: ${itemsList.phoneNumber}
       `);
+
+      return sendResult;
   }
 
 
