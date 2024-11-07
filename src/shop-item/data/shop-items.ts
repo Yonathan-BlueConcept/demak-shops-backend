@@ -121,7 +121,7 @@ export interface ShopItem {
 
     {
       id: "12",
-      imageURL: "https://images.unsplash.com/photo-1533745654343-b28b0d2f8f03?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJvdXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+      imageURL: "https://plus.unsplash.com/premium_photo-1674828600712-7d0caab39109?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJvdXNlcnxlbnwwfHwwfHx8MA%3D%3D",
       description: "Stay connected with this sleek smartphone, offering a high-resolution display, fast processor, and long battery life.",
       price: 1100,
       title: "Victory",
