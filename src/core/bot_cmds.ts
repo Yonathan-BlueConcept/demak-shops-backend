@@ -22,8 +22,8 @@ export class Bot {
 
 
   async sendItem(item: ItemDto) {
-   
-   const sendResult =  await bot.telegram.sendMessage(devin, `
+
+    const sendResult = await bot.telegram.sendMessage(devin, `
     client wants to buy the following things
     title:  ${item.title}
     price:  ${item.price}
@@ -47,14 +47,14 @@ export class Bot {
     })
 
 
-  const sendResult =   await bot.telegram.sendMessage(devin, `
+    const sendResult = await bot.telegram.sendMessage(devin, `
       client wants to buy the following things
       
       ${titleAndPrice}
-      phoneNumber: ${itemsList.phoneNumber}
-      `);
+[${itemsList.phoneNumber}](tel:${itemsList.phoneNumber})
+      `, { parse_mode: "MarkdownV2" });
 
-      return sendResult;
+    return sendResult;
   }
 
 
