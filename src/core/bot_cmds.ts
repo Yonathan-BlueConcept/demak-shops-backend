@@ -22,8 +22,8 @@ export class Bot {
 
 
   async sendItem(item: ItemDto) {
-
-    const sendResult = await bot.telegram.sendMessage(devin, `
+   
+   const sendResult =  await bot.telegram.sendMessage(devin, `
     client wants to buy the following things
     title:  ${item.title}
     price:  ${item.price}
@@ -35,26 +35,27 @@ export class Bot {
 
 
   async sendItems(itemsList: ItemsListDto) {
-    const titleAndPrice = itemsList.items.map((item) => `
-      title: ${this.escapeMarkdownV2(item.title)}
-      price: ${this.escapeMarkdownV2(item.price.toString())}
-    ------------------------------
-    `).join('');
 
-    const sendResult = await bot.telegram.sendMessage(devin, `
+    const titleAndPrice = [];
+
+    itemsList.items.forEach((item) => {
+      titleAndPrice.push(`
+        title:  ${item.title}
+        price:  ${item.price}
+    ------------------------------
+    `)
+    })
+
+
+  const sendResult =   await bot.telegram.sendMessage(devin, `
       client wants to buy the following things
       
       ${titleAndPrice}
-[${itemsList.phoneNumber}](tel:${itemsList.phoneNumber})
-    `, { parse_mode: "MarkdownV2" });
+      phoneNumber: ${itemsList.phoneNumber}
+      `);
 
-    return sendResult;
-}
-
-// Helper function to escape special MarkdownV2 characters
-escapeMarkdownV2(text) {
-    return text.replace(/([_*\[\]()~`>#+\-=|{}.!])/g, '\\$1');
-}
+      return sendResult;
+  }
 
 
 
