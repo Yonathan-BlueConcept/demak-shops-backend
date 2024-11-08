@@ -22,9 +22,9 @@ export class BotController {
     }
 
 
-    @Get('/ask-phone-number')
-    askPhoneNumber(){
-        return this.botService.askPhoneNumber();
-    }
+    // @Get('/ask-phone-number')
+    // askPhoneNumber(){
+    //     return this.botService.askPhoneNumber();
+    // }
 
 }

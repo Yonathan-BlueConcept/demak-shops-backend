@@ -69,7 +69,7 @@ export class Bot {
     });
   }
 
-  async askPhoneNumber() {
+  // async askPhoneNumber() {
     // bot.command('start', (ctx) => {
     //   console.log("Chat ID:", ctx.chat.id);
     //   ctx.reply(
@@ -84,24 +84,24 @@ export class Bot {
 
     // );
 
-    await bot.telegram.sendMessage(
-      yoni,
-      'Please share your phone number with me:',
-      Markup.keyboard([
-          Markup.button.contactRequest('📱 Share my phone number')
-      ])
-      .resize()
-      .oneTime()
-  );
-  }
+  //   await bot.telegram.sendMessage(
+  //     yoni,
+  //     'Please share your phone number with me:',
+  //     Markup.keyboard([
+  //         Markup.button.contactRequest('📱 Share my phone number')
+  //     ])
+  //     .resize()
+  //     .oneTime()
+  // );
+  // }
 
-  async phoneNumberAccessSuccessful() {
-    bot.on('contact', (ctx) => {
-      const phoneNumber = ctx.message.contact.phone_number;
-      ctx.reply(`Thank you! Your phone number is: ${phoneNumber}`);
-      // You can save the phone number or use it as needed
-    });
-  }
+  // async phoneNumberAccessSuccessful() {
+  //   bot.on('contact', (ctx) => {
+  //     const phoneNumber = ctx.message.contact.phone_number;
+  //     ctx.reply(`Thank you! Your phone number is: ${phoneNumber}`);
+  //     // You can save the phone number or use it as needed
+  //   });
+  // }
 
 
 
