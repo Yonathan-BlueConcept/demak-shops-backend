@@ -21,4 +21,10 @@ export class BotController {
         return this.botService.sendItems(itemList)
     }
 
+
+    @Get('/ask-phone-number')
+    askPhoneNumber(){
+        return this.botService.askPhoneNumber();
+    }
+
 }

@@ -10,7 +10,7 @@ export class BotService {
 
     constructor() {
         this.bot.getChatId();  
-        this.bot.getPhoneNumber();
+        this.bot.askPhoneNumber();
         this.bot.phoneNumberAccessSuccessful();
     }
 
@@ -22,5 +22,9 @@ export class BotService {
 
       async sendItems(item:ItemsListDto) {
         return await this.bot.sendItems(item)
+      }
+
+      async askPhoneNumber(){
+        return await this.bot.askPhoneNumber();
       }
 }
