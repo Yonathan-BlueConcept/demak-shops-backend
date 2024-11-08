@@ -8,7 +8,7 @@ import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
 dotenv.config();
 
 
-const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAHY");
+const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAH7");
 
 const devin: number = 5780320415;
 const yoni: number = 449678878;
