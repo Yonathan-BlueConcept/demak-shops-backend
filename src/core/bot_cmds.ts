@@ -90,7 +90,7 @@ export class Bot {
           ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
         }
       } catch (error) {
-        ctx.reply(`በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
+        ctx.reply(`አልተመዘገቡም። አገልግሎቱን ለማግኘት  በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
         console.log("Errro ... ", error)
       }
 
