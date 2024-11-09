@@ -19,20 +19,23 @@ export class Bot {
   }
 
 
-  async sendItem(item: ItemDto,chatId:number) {
+  async sendItem(item: ItemDto, chatId: number) {
 
     const sendResult = await bot.telegram.sendMessage(chatId, `
-    client wants to buy the following things
+    በደንበኛዎ የታዘዘ እቃ
+
     title:  ${item.title}
     price:  ${item.price}
-    phoneNumber: ${item.phoneNumber}
+
+    
+    phoneNumber: ${item.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
     `);
 
     return sendResult;
   }
 
 
-  async sendItems(itemsList: ItemsListDto,chatId:number) {
+  async sendItems(itemsList: ItemsListDto, chatId: number) {
 
     const titleAndPrice = [];
 
@@ -46,10 +49,11 @@ export class Bot {
 
 
     const sendResult = await bot.telegram.sendMessage(chatId, `
-      client wants to buy the following things
+      በደንበኛዎ የታዘዙ እቃዎች
       
       ${titleAndPrice}
-      phoneNumber: ${itemsList.phoneNumber}
+
+      phoneNumber: ${itemsList.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
       `);
 
     return sendResult;
@@ -60,9 +64,9 @@ export class Bot {
     bot.command('start', (ctx) => {
       console.log("Chat ID:", ctx.chat.id);
       ctx.reply(
-        'Please share your phone number with me:',
+        'እባክዎ ስልክዎን እንድመዘግብ ይፍቀዱልኝ 😊',
         Markup.keyboard([
-          Markup.button.contactRequest('Share my phone number'),
+          Markup.button.contactRequest('ስልኬን መዝግብ'),
         ])
           .resize()
           .oneTime()
@@ -76,13 +80,17 @@ export class Bot {
     bot.on('contact', async (ctx) => {
       const phoneNumber = ctx.message.contact.phone_number;
       const chatId = ctx.chat.id;
-      ctx.reply(`Thank you! Your phone number is: ${phoneNumber}`);
+
 
       console.log("chat Id ", chatId);
       console.log("Phone number ", phoneNumber);
       try {
         const result = await appOwnerService.updateChatId(phoneNumber, chatId);
-        console.log("update result .. ", result)
+        if (result) {
+          ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
+        } else {
+          ctx.reply(`በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
+        }
       } catch (error) {
         console.log("Errro ... ", error)
       }
