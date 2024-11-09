@@ -27,7 +27,7 @@ export class Bot {
     title:  ${item.title}
     price:  ${item.price}
 
-    
+
     phoneNumber: ${item.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
     `);
 
@@ -88,10 +88,9 @@ export class Bot {
         const result = await appOwnerService.updateChatId(phoneNumber, chatId);
         if (result) {
           ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
-        } else {
-          ctx.reply(`በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
         }
       } catch (error) {
+        ctx.reply(`በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
         console.log("Errro ... ", error)
       }
 
