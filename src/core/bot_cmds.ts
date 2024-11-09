@@ -9,7 +9,7 @@ import { AppOwnerService } from 'src/app-owner/app-owner.service';
 dotenv.config();
 
 
-const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAH7");
+const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAHY");
 
 export class Bot {
 
