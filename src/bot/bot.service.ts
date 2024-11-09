@@ -3,28 +3,25 @@ import { Bot } from 'src/core/bot_cmds';
 import { botLauncher } from 'src/core/bot_launcher';
 import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
+import { AppOwnerService } from 'src/app-owner/app-owner.service';
 
 @Injectable()
 export class BotService {
-    private bot: Bot | null = botLauncher();
+  private bot: Bot | null = botLauncher();
 
-    constructor() {
-        this.bot.getChatId();  
-        // this.bot.askPhoneNumber();
-        // this.bot.phoneNumberAccessSuccessful();
-    }
-
-
-      async sendItem(item:ItemDto) {
-        return await this.bot.sendItem(item)
-      }
+  constructor(private readonly appOwnerService: AppOwnerService) {
+    this.bot.askPhoneNumber();
+    this.bot.phoneNumberAccessSuccessful(this.appOwnerService);
+  }
 
 
-      async sendItems(item:ItemsListDto) {
-        return await this.bot.sendItems(item)
-      }
+  async sendItem(item: ItemDto,chatId:number) {
+    return await this.bot.sendItem(item,chatId)
+  }
 
-      // async askPhoneNumber(){
-      //   return await this.bot.askPhoneNumber();
-      // }
+
+  async sendItems(item: ItemsListDto,chatId:number) {
+    return await this.bot.sendItems(item,chatId)
+  }
+
 }

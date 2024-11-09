@@ -17,4 +17,20 @@ export class AppOwnerService {
   async findAll(): Promise<AppOwner[]> {
     return this.appOwnerModel.find().exec();
   }
+
+
+  async updateChatId(phoneNumber: string, chatId: number): Promise<AppOwner | null> {
+    const updatedOwner = await this.appOwnerModel.findOneAndUpdate(
+      { phoneNumber: phoneNumber },
+      { chatId: chatId },
+      { new: true } 
+    );
+  console.log("update user.. " , updatedOwner)
+    if (!updatedOwner) {
+      throw new Error(`AppOwner with phone number ${phoneNumber} not found.`);
+    }
+  
+    return updatedOwner;
+  }
+  
 }

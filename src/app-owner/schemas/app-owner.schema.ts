@@ -13,7 +13,7 @@ export class AppOwner extends Document {
     phoneNumber: string;
 
     @Prop()
-    chatId?: string;
+    chatId?: number;
 
     @Prop()
     appName: string;

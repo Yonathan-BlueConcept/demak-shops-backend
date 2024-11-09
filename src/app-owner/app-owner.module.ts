@@ -7,6 +7,7 @@ import { AppOwner, AppOwnerSchema } from './schemas/app-owner.schema';
 @Module({
   controllers: [AppOwnerController],
   providers: [AppOwnerService],
-  imports:[  MongooseModule.forFeature([{ name: AppOwner.name, schema: AppOwnerSchema }]),]
+  imports:[  MongooseModule.forFeature([{ name: AppOwner.name, schema: AppOwnerSchema }]),],
+  exports:[AppOwnerService]
 })
 export class AppOwnerModule {}

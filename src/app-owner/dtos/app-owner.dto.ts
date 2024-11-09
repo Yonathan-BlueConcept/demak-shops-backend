@@ -8,7 +8,7 @@ export class CreateAppOwnerDto {
     phoneNumber: string;
 
     @IsString()
-    chatId?: string;
+    chatId?: number;
 
     @IsString()
     appName: string;
