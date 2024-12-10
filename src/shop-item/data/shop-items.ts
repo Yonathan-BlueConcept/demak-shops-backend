@@ -16,7 +16,7 @@ export interface ShopItem {
       imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/men%20trouser%201.jpg?alt=media&token=45736a06-4922-48a7-a0ef-b389cb66a980",
       price: 8000,
       title: "Armani",
-      description: "Amazing trousers from turkey",
+      description: "Amazing trousers from turkey.Stylish and versatile trousers crafted for comfort and elegance. Perfect for casual outings or formal events, these trousers offer a tailored fit and premium fabric for a polished look. Available in various colors and sizes to suit your style.",
       category: "Trouser",
       carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/men%20trouser%202.jpg?alt=media&token=80a49bbe-5d4d-44fd-a016-a3583bb82126","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/men%20trouser%201.jpg?alt=media&token=45736a06-4922-48a7-a0ef-b389cb66a980"]
     },
@@ -67,18 +67,26 @@ export interface ShopItem {
       imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flull%20cloth%201.jpg?alt=media&token=46b5e016-6072-4668-bf86-b1bc7fe0e38b",
       price: 9000,
       title: "PRADA",
-      description: "the best full cloth for you",
+      description: "the best full cloth for you. Stylish and versatile trousers crafted for comfort and elegance. Perfect for casual outings or formal events, these trousers offer a tailored fit and premium fabric for a polished look. Available in various colors and sizes to suit your style.",
       category: "Full Cloth",
       carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/full%20cloth%202.jpg?alt=media&token=e09ed54f-af29-403f-8f84-f41ebe27c4ba","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flull%20cloth%201.jpg?alt=media&token=46b5e016-6072-4668-bf86-b1bc7fe0e38b"]
     },
-
+    {
+      id: "8",
+      imageURL:"https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/full%20cloth%202.jpg?alt=media&token=e09ed54f-af29-403f-8f84-f41ebe27c4ba",
+      price: 11000,
+      title: "Linkon Sivo",
+      description: "the best full cloth for you. Stylish and versatile trousers crafted for comfort and elegance. Perfect for casual outings or formal events, these trousers offer a tailored fit and premium fabric for a polished look. Available in various colors and sizes to suit your style.",
+      category: "Full Cloth",
+      carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flull%20cloth%201.jpg?alt=media&token=46b5e016-6072-4668-bf86-b1bc7fe0e38b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/full%20cloth%202.jpg?alt=media&token=e09ed54f-af29-403f-8f84-f41ebe27c4ba","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flull%20cloth%201.jpg?alt=media&token=46b5e016-6072-4668-bf86-b1bc7fe0e38b"]
+    },
 
     {
       id: "7",
       imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/full%20cloth%20gucci.jpg?alt=media&token=086f2ec7-bfd9-44c7-a96b-f514d0f10aff",
       price: 9000,
       title: "GUCCI",
-      description: "GUCCI for you. best full cloth in the town",
+      description: "GUCCI for you. best full cloth in the town. Stylish and versatile trousers crafted for comfort and elegance. Perfect for casual outings or formal events, these trousers offer a tailored fit and premium fabric for a polished look. Available in various colors and sizes to suit your style.",
       category: "Full Cloth",
       carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/full%20cloth%20gucci.jpg?alt=media&token=086f2ec7-bfd9-44c7-a96b-f514d0f10aff"]
     },
