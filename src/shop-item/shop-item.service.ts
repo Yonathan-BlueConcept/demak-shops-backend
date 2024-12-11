@@ -17,7 +17,8 @@ export class ShopItemService {
     }
 
     async searchItemByTitle(title: string): Promise<ShopItem[]> {
-        return shopItems.filter((item) => item.title === title);
+        const lowercaseTitle = title.toLowerCase();
+        return shopItems.filter((item) => item.title.toLowerCase() === lowercaseTitle);
     }
 
     async getItemsByCategory(category: string): Promise<ShopItem[]> {
