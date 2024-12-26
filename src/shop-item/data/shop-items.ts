@@ -228,15 +228,15 @@ export interface ShopItem {
       category: "Shoe",
       carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%204.jpg?alt=media&token=4471c253-35d9-40be-a321-39a7834966f3","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%203.jpg?alt=media&token=f9c7bf9c-beb1-429d-8ea5-f5d48589fb3e","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%202.jpg?alt=media&token=858614ae-c593-436f-af81-815dd5a86814","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dimond%201.jpg?alt=media&token=1c5ecde7-9785-49bb-9623-252713cd2053"]
     },
-    // {
-    //   id: "1",
-    //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%205.jpg?alt=media&token=6e25340c-b918-4160-9737-d7595773676b",
-    //   price: 2200,
-    //   title: " ",
-    //   description: "Lightweight Qualit Shoe.  Colour  2 ቁጥር 35,36,37,38,39",
-    //   category: "Shoe",
-    //   carsouselImages: [""]
-    // },
+    {
+      id: "3",
+      imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%205.jpg?alt=media&token=91d2226f-40ed-4341-9aea-c1b0b2e8c2bd",
+      price: 2200,
+      title: " ",
+      description:"Lightweight Quality Shoe.\nColour 2\nቁጥር 35,36,37,38,39",
+      category: "Shoe",
+      carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%204.jpg?alt=media&token=ce92ef72-835e-45c3-af4b-0ff6a180df0e","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%203.jpg?alt=media&token=a1953982-9749-4c2b-a320-624a73bf3581","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%202.jpg?alt=media&token=74d4c374-d9e1-4cbf-ba55-c4fac0c77eaa","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%201.jpg?alt=media&token=dcbe22fd-34dd-4f95-8a2a-9f62dfaa3986"]
+    },
     // {
     //   id: "1",
     //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%205.jpg?alt=media&token=6e25340c-b918-4160-9737-d7595773676b",
