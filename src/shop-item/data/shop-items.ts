@@ -215,9 +215,9 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%205.jpg?alt=media&token=6e25340c-b918-4160-9737-d7595773676b",
     price: 2200,
     title: " ",
-    description: `Lightweight Quality Shoe.
-      \nColour 2
-      \nቁጥር 35,36,37,38,39`,
+    description: `
+    \nColour 2
+    \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%204.jpg?alt=media&token=50b965d5-560f-4b52-9b47-38d816f8ed4a", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%203.jpg?alt=media&token=8c2bc593-c632-4ca8-9d54-b3f96db4f417", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%202.jpg?alt=media&token=88cf6f93-348e-4c42-9434-9bd697abe03d", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%201.jpg?alt=media&token=4231f506-d214-49a2-94be-09702e1e076c"]
   },
@@ -226,9 +226,9 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%205.jpg?alt=media&token=94975946-ed2e-4624-932e-d26896012d12",
     price: 2200,
     title: " ",
-    description: `Lightweight Quality Shoe.
-      \nColour 2
-      \nቁጥር 35,36,37,38,39`,
+    description: `
+    \nColour 2
+    \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%204.jpg?alt=media&token=4471c253-35d9-40be-a321-39a7834966f3", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%203.jpg?alt=media&token=f9c7bf9c-beb1-429d-8ea5-f5d48589fb3e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%202.jpg?alt=media&token=858614ae-c593-436f-af81-815dd5a86814", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dimond%201.jpg?alt=media&token=1c5ecde7-9785-49bb-9623-252713cd2053"]
   },
@@ -237,9 +237,9 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%205.jpg?alt=media&token=91d2226f-40ed-4341-9aea-c1b0b2e8c2bd",
     price: 2200,
     title: " ",
-    description: `Lightweight Quality Shoe.
-      \nColour 2
-      \nቁጥር 35,36,37,38,39`,
+    description:  `
+    \nColour 2
+    \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%204.jpg?alt=media&token=ce92ef72-835e-45c3-af4b-0ff6a180df0e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%203.jpg?alt=media&token=a1953982-9749-4c2b-a320-624a73bf3581", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%202.jpg?alt=media&token=74d4c374-d9e1-4cbf-ba55-c4fac0c77eaa", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%201.jpg?alt=media&token=dcbe22fd-34dd-4f95-8a2a-9f62dfaa3986"]
   },
@@ -248,7 +248,7 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%205.jpg?alt=media&token=0f19bd1c-587f-4607-8b7c-6354a2885b51",
     price: 1995,
     title: " ",
-    description: `Lightweight Quality Shoe.
+    description:  `
     \nColour 2
     \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
@@ -259,7 +259,7 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%204.jpg?alt=media&token=80acf3db-9e5a-44e8-8409-2d7c6bd07259",
     price: 1995,
     title: " ",
-    description: `Lightweight Quality Shoe.
+    description: `
     \nColour 2
     \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
@@ -270,10 +270,59 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%201.jpg?alt=media&token=6fbf280d-4def-469c-bf79-d2d94e48ee3e",
     price: 2200,
     title: " ",
-    description: `Lightweight Quality Shoe.
+    description: `
     \nColour 2
     \nቁጥር 35,36,37,38,39`,
     category: "Shoe",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%202.jpg?alt=media&token=ebb0eb53-f4c2-45ec-be1a-41c458bb958b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%203.jpg?alt=media&token=7c950e72-4a89-43ce-bec5-83cbae2b78cc","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%204.jpg?alt=media&token=69f77ee1-29c8-49da-b0b1-0ba73535d65d"]
+  },
+  // {
+  //   id: "6",
+  //   imageURL: "",
+  //   price: 1,
+  //   title: " ",
+  //   description: `.
+  // `,
+  //   category: "Dress",
+  //   carsouselImages: ["","",""]
+  // },
+  {
+    id: "7",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28",
+    price: 1595,
+    title: " ",
+    description: `.
+  `,
+    category: "Dress",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%202.jpg?alt=media&token=9a9e1549-6856-41f7-b646-60c71a3598c6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28"]
+  },
+  {
+    id: "8",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
+    price: 1200,
+    title: "Mini Skirt",
+    description: `4 Colors
+  `,
+    category: "Dress",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
+  },
+  {
+    id: "9",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
+    price: 1200,
+    title: "Mini Skirt",
+    description: `4 Colors`,
+    category: "Dress",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
+  },
+  {
+    id: "10",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%201.jpg?alt=media&token=84924861-cbee-4400-a70a-816e7264d14a",
+    price: 900,
+    title: "Mini Skirt",
+    description: `4 Colors
+  `,
+    category: "Dress",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%202.jpg?alt=media&token=f2fe6f4c-6f9d-4d74-b675-13af89804742","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%203.jpg?alt=media&token=060d0e2a-9fba-43c9-80ed-900b1bb73bd6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%204.jpg?alt=media&token=a4437960-07b8-4e5a-9dbd-4caa16b51dcf"]
   },
 ]
