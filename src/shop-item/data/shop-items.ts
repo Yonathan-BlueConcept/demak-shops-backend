@@ -210,72 +210,72 @@ export interface ShopItem {
 // ];
 
 export const shopItems: ShopItem[] = [
-  {
-    id: "1",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%205.jpg?alt=media&token=6e25340c-b918-4160-9737-d7595773676b",
-    price: 2200,
-    title: " ",
-    description: `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%204.jpg?alt=media&token=50b965d5-560f-4b52-9b47-38d816f8ed4a", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%203.jpg?alt=media&token=8c2bc593-c632-4ca8-9d54-b3f96db4f417", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%202.jpg?alt=media&token=88cf6f93-348e-4c42-9434-9bd697abe03d", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%201.jpg?alt=media&token=4231f506-d214-49a2-94be-09702e1e076c"]
-  },
-  {
-    id: "2",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%205.jpg?alt=media&token=94975946-ed2e-4624-932e-d26896012d12",
-    price: 2200,
-    title: " ",
-    description: `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%204.jpg?alt=media&token=4471c253-35d9-40be-a321-39a7834966f3", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%203.jpg?alt=media&token=f9c7bf9c-beb1-429d-8ea5-f5d48589fb3e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%202.jpg?alt=media&token=858614ae-c593-436f-af81-815dd5a86814", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dimond%201.jpg?alt=media&token=1c5ecde7-9785-49bb-9623-252713cd2053"]
-  },
-  {
-    id: "3",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%205.jpg?alt=media&token=91d2226f-40ed-4341-9aea-c1b0b2e8c2bd",
-    price: 2200,
-    title: " ",
-    description:  `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%204.jpg?alt=media&token=ce92ef72-835e-45c3-af4b-0ff6a180df0e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%203.jpg?alt=media&token=a1953982-9749-4c2b-a320-624a73bf3581", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%202.jpg?alt=media&token=74d4c374-d9e1-4cbf-ba55-c4fac0c77eaa", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%201.jpg?alt=media&token=dcbe22fd-34dd-4f95-8a2a-9f62dfaa3986"]
-  },
-  {
-    id: "4",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%205.jpg?alt=media&token=0f19bd1c-587f-4607-8b7c-6354a2885b51",
-    price: 1995,
-    title: " ",
-    description:  `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%204.jpg?alt=media&token=bb49ed1b-6545-4915-a61b-b90f3ef39e91","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%203.jpg?alt=media&token=58d17cc0-036d-45c5-809a-7f2b04c8ec3b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%202.jpg?alt=media&token=1db89657-18bd-4261-8f0f-7dc76d9c5b51","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%201.jpg?alt=media&token=6030cb86-9348-4689-8b97-90e027da551c"]
-  },
-  {
-    id: "4",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%204.jpg?alt=media&token=80acf3db-9e5a-44e8-8409-2d7c6bd07259",
-    price: 1995,
-    title: " ",
-    description: `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%203.jpg?alt=media&token=f747d26e-4949-4aeb-89c5-f9a4e5b1f74f","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%202.jpg?alt=media&token=154aee94-ab24-4ef2-9e87-dab91c2e0b0e","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%201.jpg?alt=media&token=e5880519-b66a-4fce-9f67-7b5454162b53"]
-  },
-  {
-    id: "5",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%201.jpg?alt=media&token=6fbf280d-4def-469c-bf79-d2d94e48ee3e",
-    price: 2200,
-    title: " ",
-    description: `
-    \nColour 2
-    \nቁጥር 35,36,37,38,39`,
-    category: "Shoe",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%202.jpg?alt=media&token=ebb0eb53-f4c2-45ec-be1a-41c458bb958b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%203.jpg?alt=media&token=7c950e72-4a89-43ce-bec5-83cbae2b78cc","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%204.jpg?alt=media&token=69f77ee1-29c8-49da-b0b1-0ba73535d65d"]
-  },
+  // {
+  //   id: "1",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%205.jpg?alt=media&token=6e25340c-b918-4160-9737-d7595773676b",
+  //   price: 2200,
+  //   title: " ",
+  //   description: `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%204.jpg?alt=media&token=50b965d5-560f-4b52-9b47-38d816f8ed4a", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%203.jpg?alt=media&token=8c2bc593-c632-4ca8-9d54-b3f96db4f417", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%202.jpg?alt=media&token=88cf6f93-348e-4c42-9434-9bd697abe03d", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dama%201.jpg?alt=media&token=4231f506-d214-49a2-94be-09702e1e076c"]
+  // },
+  // {
+  //   id: "2",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%205.jpg?alt=media&token=94975946-ed2e-4624-932e-d26896012d12",
+  //   price: 2200,
+  //   title: " ",
+  //   description: `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%204.jpg?alt=media&token=4471c253-35d9-40be-a321-39a7834966f3", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%203.jpg?alt=media&token=f9c7bf9c-beb1-429d-8ea5-f5d48589fb3e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/diamond%202.jpg?alt=media&token=858614ae-c593-436f-af81-815dd5a86814", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/dimond%201.jpg?alt=media&token=1c5ecde7-9785-49bb-9623-252713cd2053"]
+  // },
+  // {
+  //   id: "3",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%205.jpg?alt=media&token=91d2226f-40ed-4341-9aea-c1b0b2e8c2bd",
+  //   price: 2200,
+  //   title: " ",
+  //   description:  `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%204.jpg?alt=media&token=ce92ef72-835e-45c3-af4b-0ff6a180df0e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%203.jpg?alt=media&token=a1953982-9749-4c2b-a320-624a73bf3581", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%202.jpg?alt=media&token=74d4c374-d9e1-4cbf-ba55-c4fac0c77eaa", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/flower%201.jpg?alt=media&token=dcbe22fd-34dd-4f95-8a2a-9f62dfaa3986"]
+  // },
+  // {
+  //   id: "4",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%205.jpg?alt=media&token=0f19bd1c-587f-4607-8b7c-6354a2885b51",
+  //   price: 1995,
+  //   title: " ",
+  //   description:  `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%204.jpg?alt=media&token=bb49ed1b-6545-4915-a61b-b90f3ef39e91","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%203.jpg?alt=media&token=58d17cc0-036d-45c5-809a-7f2b04c8ec3b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%202.jpg?alt=media&token=1db89657-18bd-4261-8f0f-7dc76d9c5b51","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ring%201.jpg?alt=media&token=6030cb86-9348-4689-8b97-90e027da551c"]
+  // },
+  // {
+  //   id: "4",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%204.jpg?alt=media&token=80acf3db-9e5a-44e8-8409-2d7c6bd07259",
+  //   price: 1995,
+  //   title: " ",
+  //   description: `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%203.jpg?alt=media&token=f747d26e-4949-4aeb-89c5-f9a4e5b1f74f","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%202.jpg?alt=media&token=154aee94-ab24-4ef2-9e87-dab91c2e0b0e","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/satera%201.jpg?alt=media&token=e5880519-b66a-4fce-9f67-7b5454162b53"]
+  // },
+  // {
+  //   id: "5",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%201.jpg?alt=media&token=6fbf280d-4def-469c-bf79-d2d94e48ee3e",
+  //   price: 2200,
+  //   title: " ",
+  //   description: `
+  //   \nColour 2
+  //   \nቁጥር 35,36,37,38,39`,
+  //   category: "Shoe",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%202.jpg?alt=media&token=ebb0eb53-f4c2-45ec-be1a-41c458bb958b","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%203.jpg?alt=media&token=7c950e72-4a89-43ce-bec5-83cbae2b78cc","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/square%204.jpg?alt=media&token=69f77ee1-29c8-49da-b0b1-0ba73535d65d"]
+  // },
   // {
   //   id: "6",
   //   imageURL: "",
@@ -286,43 +286,114 @@ export const shopItems: ShopItem[] = [
   //   category: "Dress",
   //   carsouselImages: ["","",""]
   // },
-  {
-    id: "7",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28",
-    price: 1595,
-    title: " ",
+  // {
+  //   id: "7",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28",
+  //   price: 1595,
+  //   title: " ",
+  //   description: `.
+  // `,
+  //   category: "Dress",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%202.jpg?alt=media&token=9a9e1549-6856-41f7-b646-60c71a3598c6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28"]
+  // },
+  // {
+  //   id: "8",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
+  //   price: 1200,
+  //   title: "Mini Skirt",
+  //   description: `4 Colors
+  // `,
+  //   category: "Dress",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
+  // },
+  // {
+  //   id: "9",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
+  //   price: 1200,
+  //   title: "Mini Skirt",
+  //   description: `4 Colors`,
+  //   category: "Dress",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
+  // },
+  // {
+  //   id: "10",
+  //   imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%201.jpg?alt=media&token=84924861-cbee-4400-a70a-816e7264d14a",
+  //   price: 900,
+  //   title: "Mini Skirt",
+  //   description: `4 Colors
+  // `,
+  //   category: "Dress",
+  //   carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%202.jpg?alt=media&token=f2fe6f4c-6f9d-4d74-b675-13af89804742","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%203.jpg?alt=media&token=060d0e2a-9fba-43c9-80ed-900b1bb73bd6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%204.jpg?alt=media&token=a4437960-07b8-4e5a-9dbd-4caa16b51dcf"]
+  // },
+
+
+
+
+
+
+    {
+    id: "1",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3",
+    price: 4000,
+    title: "Blushing Silver",
     description: `.
   `,
-    category: "Dress",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%202.jpg?alt=media&token=9a9e1549-6856-41f7-b646-60c71a3598c6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20full%20dress%204.jpg?alt=media&token=a732e75f-1f44-4af4-a370-e44aaae1ed28"]
+    category: "Rose",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%203.jpg?alt=media&token=fa268445-d37c-4580-96be-7f21e7372048","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%202.jpg?alt=media&token=fbc7f137-47c8-48e2-a753-90bd2f1ac9f3","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3"]
   },
+
   {
-    id: "8",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
-    price: 1200,
-    title: "Mini Skirt",
-    description: `4 Colors
+    id: "2",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20cherry%20glow%204500%20birr%202.jpg?alt=media&token=6e187eb6-929e-4676-8191-285f213c456a",
+    price: 4500,
+    title: "Cherry Blow",
+    description: `.
   `,
-    category: "Dress",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
+    category: "Rose",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20cherry%20glow%204500%20birr.jpg?alt=media&token=02e2b6b5-a258-43da-a99e-8e92f8708b3e","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%203.jpg?alt=media&token=fa268445-d37c-4580-96be-7f21e7372048","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%202.jpg?alt=media&token=fbc7f137-47c8-48e2-a753-90bd2f1ac9f3","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3"]
   },
+
+
   {
-    id: "9",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress_%20mini%20skirt%203.jpg?alt=media&token=911be8cb-1c9b-4581-9af6-69d5e56b7157",
-    price: 1200,
-    title: "Mini Skirt",
-    description: `4 Colors`,
-    category: "Dress",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_mini%20skirt%202.jpg?alt=media&token=76f8c6b5-f711-4b90-8ebb-1cc8178b050a","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20mini%20skirt%201.jpg?alt=media&token=8bb26c74-7572-4f0d-a785-d2742cd7ba93"]
-  },
-  {
-    id: "10",
-    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%201.jpg?alt=media&token=84924861-cbee-4400-a70a-816e7264d14a",
-    price: 900,
-    title: "Mini Skirt",
-    description: `4 Colors
+    id: "3",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%201%20birr.jpg?alt=media&token=e53ae47f-fdc6-4951-a29b-72c0c159d7c9",
+    price: 6000,
+    title: "Flora Dream Maxi",
+    description: `.
   `,
-    category: "Dress",
-    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%202.jpg?alt=media&token=f2fe6f4c-6f9d-4d74-b675-13af89804742","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%203.jpg?alt=media&token=060d0e2a-9fba-43c9-80ed-900b1bb73bd6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/ab_style_dress%20top%20b%204.jpg?alt=media&token=a4437960-07b8-4e5a-9dbd-4caa16b51dcf"]
+    category: "Rose",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%203%20birr.jpg?alt=media&token=e4055e53-5068-4ab6-804c-64f0c42d51d1","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%202%20birr.jpg?alt=media&token=bda9545b-3fe6-4caa-aca3-1d27c5eaad01","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%201%20birr.jpg?alt=media&token=e53ae47f-fdc6-4951-a29b-72c0c159d7c9"]
+  },
+
+  {
+    id: "4",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%201%20%20earthy%20vibes.jpg?alt=media&token=8f5e8a0d-13fb-40e6-b87c-bae0d893a4cf",
+    price: 5000,
+    title: "Flora Dream Maxi",
+    description: `.
+  `,
+    category: "Green",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%202.jpg?alt=media&token=f10949bd-f4bd-418a-be35-834e4505f644","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%201%20%20earthy%20vibes.jpg?alt=media&token=8f5e8a0d-13fb-40e6-b87c-bae0d893a4cf"]
+  },
+  {
+    id: "5",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20rose%20%205000%20birr%20tropical.jpg?alt=media&token=4c964ae3-33e2-49bd-880e-904f7df3bb31",
+    price: 5000,
+    title: "Tropical",
+    description: `.
+  `,
+    category: "Rose",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%202.jpg?alt=media&token=f10949bd-f4bd-418a-be35-834e4505f644","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%201%20%20earthy%20vibes.jpg?alt=media&token=8f5e8a0d-13fb-40e6-b87c-bae0d893a4cf"]
+  },
+
+  {
+    id: "6",
+    imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%202%204500%20birr.jpg?alt=media&token=fd205d96-63f9-4d0d-add4-b280a504af56",
+    price: 4500,
+    title: "SunSet Charm",
+    description: `.
+  `,
+    category: "Red",
+    carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%202%204500%20birr.jpg?alt=media&token=fd205d96-63f9-4d0d-add4-b280a504af56","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%203%204500%20birr.jpg?alt=media&token=67343588-6fcd-44d5-bfc6-aa9a91ce7eb6","https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%204500%20birr.jpg?alt=media&token=98f46112-aeec-464a-b68d-d2c4311bb4a5"]
   },
 ]
