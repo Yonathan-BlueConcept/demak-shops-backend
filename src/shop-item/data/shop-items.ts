@@ -336,7 +336,7 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3",
     price: 4000,
     title: "Blushing Silver",
-    description: `.
+    description: `Blushing Silver Cherry Blow Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. 
   `,
     category: "Rose",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%203.jpg?alt=media&token=fa268445-d37c-4580-96be-7f21e7372048", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%202.jpg?alt=media&token=fbc7f137-47c8-48e2-a753-90bd2f1ac9f3", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3"]
@@ -347,7 +347,7 @@ export const shopItems: ShopItem[] = [
     imageURL: "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20cherry%20glow%204500%20birr%202.jpg?alt=media&token=6e187eb6-929e-4676-8191-285f213c456a",
     price: 4500,
     title: "Cherry Blow",
-    description: `Cherry Blow Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. Crafted from soft, breathable fabric, this dress features a flattering silhouette and delicate floral patterns that make it perfect for casual outings or special occasions. Pair it with heels or flats for a versatile, chic look.
+    description: `Cherry Blow Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. 
   `,
     category: "Rose",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20cherry%20glow%204500%20birr.jpg?alt=media&token=02e2b6b5-a258-43da-a99e-8e92f8708b3e", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%203.jpg?alt=media&token=fa268445-d37c-4580-96be-7f21e7372048", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%202.jpg?alt=media&token=fbc7f137-47c8-48e2-a753-90bd2f1ac9f3", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20blushing%20silver%204000%20birr%201.jpg?alt=media&token=a7d937ec-1d4d-489e-b058-eb85cd7e33c3"]
@@ -360,7 +360,7 @@ export const shopItems: ShopItem[] = [
     price: 6000,
     title: "Flora Dream Maxi",
     description: `
-    Cherry Blow Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. Crafted from soft, breathable fabric, this dress features a flattering silhouette and delicate floral patterns that make it perfect for casual outings or special occasions. Pair it with heels or flats for a versatile, chic look.
+    Cherry Blow Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe.
   `,
     category: "Rose",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%203%20birr.jpg?alt=media&token=e4055e53-5068-4ab6-804c-64f0c42d51d1", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%202%20birr.jpg?alt=media&token=bda9545b-3fe6-4caa-aca3-1d27c5eaad01", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20flora%20dream%20maxi%206000%201%20birr.jpg?alt=media&token=e53ae47f-fdc6-4951-a29b-72c0c159d7c9"]
@@ -372,7 +372,7 @@ export const shopItems: ShopItem[] = [
     price: 5000,
     title: "Flora Dream Maxi",
     description: `
-  Flora Dream Maxi Make a bold statement with our stunning Green Dress, ideal for both day and evening wear. Its rich, vibrant shade symbolizes freshness and style, while the tailored design ensures a comfortable yet sophisticated fit. Perfect for parties, outdoor events, or even a stylish workday, this dress is your go-to for effortless elegance.
+  Flora Dream Maxi Make a bold statement with our stunning Green Dress, ideal for both day and evening wear. Its rich, vibrant shade symbolizes freshness and style, while the tailored design ensures a comfortable yet sophisticated fit. Perfect for parties.
   `,
     category: "Green",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%202.jpg?alt=media&token=f10949bd-f4bd-418a-be35-834e4505f644", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%201%20%20earthy%20vibes.jpg?alt=media&token=8f5e8a0d-13fb-40e6-b87c-bae0d893a4cf"]
@@ -383,7 +383,7 @@ export const shopItems: ShopItem[] = [
     price: 5000,
     title: "Tropical",
     description: `.
-    Tropical Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. Crafted from soft, breathable fabric, this dress features a flattering silhouette and delicate floral patterns that make it perfect for casual outings or special occasions. Pair it with heels or flats for a versatile, chic look.
+    Tropical Embrace timeless elegance with our Rose Dress, designed for those who love a touch of romance in their wardrobe. Crafted from soft, breathable fabric, this dress features a flattering silhouette and delicate floral patterns that make it perfect for casual outings or special occasions.
   `,
     category: "Rose",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%202.jpg?alt=media&token=f10949bd-f4bd-418a-be35-834e4505f644", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20green%205000%20birr%201%20%20earthy%20vibes.jpg?alt=media&token=8f5e8a0d-13fb-40e6-b87c-bae0d893a4cf"]
@@ -395,7 +395,7 @@ export const shopItems: ShopItem[] = [
     price: 4500,
     title: "SunSet Charm",
     description: `
-    SunSet Charm Turn heads with our captivating Red Dress, the ultimate symbol of confidence and allure. This dress is designed to make you feel bold and beautiful, with a sleek cut that accentuates your curves. Ideal for date nights, formal gatherings, or any event where you want to leave a lasting impression. Complete the look with your favorite accessories and let the color do the talking.
+    SunSet Charm Turn heads with our captivating Red Dress, the ultimate symbol of confidence and allure. This dress is designed to make you feel bold and beautiful, with a sleek cut that accentuates your curves. Ideal for date nights, formal gatherings, or any event where you want to leave a lasting impression.
   `,
     category: "Red",
     carsouselImages: ["https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%202%204500%20birr.jpg?alt=media&token=fd205d96-63f9-4d0d-add4-b280a504af56", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%203%204500%20birr.jpg?alt=media&token=67343588-6fcd-44d5-bfc6-aa9a91ce7eb6", "https://firebasestorage.googleapis.com/v0/b/temari-path---learn.appspot.com/o/muse%20sunset%20charm%204500%20birr.jpg?alt=media&token=98f46112-aeec-464a-b68d-d2c4311bb4a5"]
