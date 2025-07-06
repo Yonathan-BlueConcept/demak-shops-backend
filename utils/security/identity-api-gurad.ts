@@ -10,7 +10,7 @@ export class IdentityApiKeyGuard implements CanActivate {
     const request = context.switchToHttp().getRequest<Request>();
 
     // Get API keys from headers
-    const demakShopsApiKey = request.headers['x-demak-shops-identity-api-key'];
+    const demakShopsApiKey = request.headers['kelemat_store_api_key'];
 
     // Get the valid API keys from environment variables
     // const apiKey = this.configService.get<string>('API_KEY');
