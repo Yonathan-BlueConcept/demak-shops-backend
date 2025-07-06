@@ -26,9 +26,7 @@ export class Bot {
 
     title:  ${item.title}
     price:  ${item.price}
-
-
-    phoneNumber: ${item.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
+    ownerName: ${item.ownerName}
     `);
 
     return sendResult;

@@ -7,13 +7,14 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppOwnerModule } from './app-owner/app-owner.module';
 @Module({
-  imports: [ ConfigModule.forRoot({
+  imports: [ConfigModule.forRoot({
     envFilePath: '.env',
     isGlobal: true,
   },
-),BotModule, ShopItemModule, 
-MongooseModule.forRoot(process.env.MONGO_URI), AppOwnerModule, ],
+  ), BotModule, ShopItemModule
+    , MongooseModule.forRoot(process.env.MONGO_URI)
+    , AppOwnerModule,],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }

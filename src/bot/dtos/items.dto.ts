@@ -8,6 +8,9 @@ export class ItemDto {
   @IsNumber()
   price: number;
 
-  @IsNumber()
-  phoneNumber: string;
+  @IsString()
+  ownerName:string;
+
+  // @IsNumber()
+  // phoneNumber: string;
 }

@@ -12,6 +12,7 @@ export class BotController {
 
     @Post('/send-item/:chatId')
     sendItemsList(@Param('chatId') chatId:number, @Body() itemDto: ItemDto,) {
+        console.info('Sending item to chat:', chatId, 'with data:', itemDto);
         return this.botService.sendItem(itemDto,chatId);
     }
 
