@@ -2,7 +2,7 @@ import { Markup, Telegraf } from 'telegraf';
 import * as dotenv from 'dotenv';
 import { ItemDto } from 'src/bot/dtos/items.dto';
 import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
-import { AppOwnerService } from 'src/app-owner/app-owner.service';
+// import { AppOwnerService } from 'src/app-owner/app-owner.service';
 
 
 
@@ -74,30 +74,30 @@ export class Bot {
     );
   }
 
-  async phoneNumberAccessSuccessful(appOwnerService: AppOwnerService) {
-    bot.on('contact', async (ctx) => {
-      const phoneNumber = ctx.message.contact.phone_number;
-      const chatId = ctx.chat.id;
+  // async phoneNumberAccessSuccessful(appOwnerService: AppOwnerService) {
+  //   bot.on('contact', async (ctx) => {
+  //     const phoneNumber = ctx.message.contact.phone_number;
+  //     const chatId = ctx.chat.id;
 
 
-      console.log("chat Id ", chatId);
-      console.log("Phone number ", phoneNumber);
-      try {
-        const result = await appOwnerService.updateChatId(phoneNumber, chatId);
-        if (result) {
-          ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
-        }
-      } catch (error) {
-        ctx.reply(`አልተመዘገቡም። አገልግሎቱን ለማግኘት  በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
-        console.log("Errro ... ", error)
-      }
+  //     console.log("chat Id ", chatId);
+  //     console.log("Phone number ", phoneNumber);
+  //     try {
+  //       const result = await appOwnerService.updateChatId(phoneNumber, chatId);
+  //       if (result) {
+  //         ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
+  //       }
+  //     } catch (error) {
+  //       ctx.reply(`አልተመዘገቡም። አገልግሎቱን ለማግኘት  በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
+  //       console.log("Errro ... ", error)
+  //     }
 
 
 
 
-      // You can save the phone number or use it as needed
-    });
-  }
+  //     // You can save the phone number or use it as needed
+  //   });
+  // }
 
 
 
