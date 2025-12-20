@@ -25,6 +25,7 @@ export class BotController {
 
     @Post('/send-student-detail')
     sendStudentDetail(@Body() studentDetail: studentDetail) {
+     
         return this.botService.sendStudentDetail(studentDetail);
     }
 }
