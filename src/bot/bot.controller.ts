@@ -3,6 +3,7 @@ import { BotService } from './bot.service';
 import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
 import { IdentityApiKeyGuard } from 'utils/security/identity-api-gurad';
+import { studentDetail } from 'src/edu/dto/student_deatil';
 
 @Controller('bot')
 @UseGuards(IdentityApiKeyGuard)
@@ -20,5 +21,10 @@ export class BotController {
     sendItems(@Param('chatId') chatId:number,@Body() itemList: ItemsListDto,) {
         
         return this.botService.sendItems(itemList,chatId)
+    }
+
+    @Post('/send-student-detail')
+    sendStudentDetail(@Body() studentDetail: studentDetail) {
+        return this.botService.sendStudentDetail(studentDetail);
     }
 }

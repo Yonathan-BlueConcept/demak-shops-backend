@@ -3,6 +3,7 @@ import { Bot } from 'src/core/bot_cmds';
 import { botLauncher } from 'src/core/bot_launcher';
 import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
+import { studentDetail } from 'src/edu/dto/student_deatil';
 // import { AppOwnerService } from 'src/app-owner/app-owner.service';
 
 @Injectable()
@@ -22,6 +23,10 @@ export class BotService {
 
   async sendItems(item: ItemsListDto,chatId:number) {
     return await this.bot.sendItems(item,chatId)
+  }
+
+  async sendStudentDetail(studentDetail: studentDetail) {
+    return await this.bot.sendStudentDetail(studentDetail)
   }
 
 }

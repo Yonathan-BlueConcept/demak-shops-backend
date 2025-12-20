@@ -2,6 +2,7 @@ import { Markup, Telegraf } from 'telegraf';
 import * as dotenv from 'dotenv';
 import { ItemDto } from 'src/bot/dtos/items.dto';
 import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
+import { studentDetail } from 'src/edu/dto/student_deatil';
 // import { AppOwnerService } from 'src/app-owner/app-owner.service';
 
 
@@ -9,7 +10,7 @@ import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
 dotenv.config();
 
 
-const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAHY");
+const bot = new Telegraf(process.env.BOT_TOKEN || '');
 
 export class Bot {
 
@@ -32,6 +33,17 @@ export class Bot {
     return sendResult;
   }
 
+  async sendStudentDetail(studentDetail: studentDetail) {
+
+    const sendResult = await bot.telegram.sendMessage(process.env.CHAT_ID, `
+    የተማሪ ዝርዝር
+
+    ስም: ${studentDetail.name}
+    ስልክ ቁጥር: ${studentDetail.phoneNumber}
+    `);
+
+    return sendResult;
+  }
 
   async sendItems(itemsList: ItemsListDto, chatId: number) {
 

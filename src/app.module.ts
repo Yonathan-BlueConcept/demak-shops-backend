@@ -6,6 +6,9 @@ import { ShopItemModule } from './shop-item/shop-item.module';
 import { ConfigModule } from '@nestjs/config';
 // import { MongooseModule } from '@nestjs/mongoose';
 import { AppOwnerModule } from './app-owner/app-owner.module';
+import { EduModule } from './edu/edu.module';
+
+
 @Module({
   imports: [ConfigModule.forRoot({
     envFilePath: '.env',
@@ -13,7 +16,7 @@ import { AppOwnerModule } from './app-owner/app-owner.module';
   },
   ), BotModule, ShopItemModule
     // , MongooseModule.forRoot(process.env.MONGO_URI)
-    , AppOwnerModule,],
+    , AppOwnerModule, EduModule,],
   controllers: [AppController],
   providers: [AppService],
 })
