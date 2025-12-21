@@ -4,6 +4,7 @@ import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
 import { IdentityApiKeyGuard } from 'utils/security/identity-api-gurad';
 import { studentDetail } from 'src/edu/dto/student_deatil';
+import { studentAction } from 'src/edu/dto/student_action';
 
 @Controller('bot')
 @UseGuards(IdentityApiKeyGuard)
@@ -28,4 +29,10 @@ export class BotController {
      
         return this.botService.sendStudentDetail(studentDetail);
     }
+
+    
+   @Post('/send-student-action')
+  sendtudentAction(@Body() studentAction: studentAction) {
+    return this.botService.sendStudentAction(studentAction);
+  }
 }

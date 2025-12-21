@@ -4,6 +4,7 @@ import { ItemDto } from 'src/bot/dtos/items.dto';
 import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
 import { studentDetail } from 'src/edu/dto/student_deatil';
 // import { AppOwnerService } from 'src/app-owner/app-owner.service';
+import { studentAction } from 'src/edu/dto/student_action';
 
 
 
@@ -42,6 +43,17 @@ export class Bot {
     ስልክ ቁጥር: ${studentDetail.phoneNumber}
     ትምህርት ቤት: ${studentDetail.schoolName}
     የትምህርት ስም: ${studentDetail.courseTitle}
+    `);
+
+    return sendResult;
+  }
+
+async sendStudentAction(studentAction: studentAction) {
+
+    const sendResult = await bot.telegram.sendMessage(process.env.CHAT_ID, `
+    Student's Action
+    Action Type: ${studentAction.clickType}
+    School Name: ${studentAction.schoolName}
     `);
 
     return sendResult;

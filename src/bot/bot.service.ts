@@ -4,6 +4,7 @@ import { botLauncher } from 'src/core/bot_launcher';
 import { ItemDto } from './dtos/items.dto';
 import { ItemsListDto } from './dtos/items_list.dto';
 import { studentDetail } from 'src/edu/dto/student_deatil';
+import { studentAction } from 'src/edu/dto/student_action';
 // import { AppOwnerService } from 'src/app-owner/app-owner.service';
 
 @Injectable()
@@ -27,6 +28,10 @@ export class BotService {
 
   async sendStudentDetail(studentDetail: studentDetail) {
     return await this.bot.sendStudentDetail(studentDetail)
+  }
+
+  async sendStudentAction(studentAction: studentAction) {
+    return await this.bot.sendStudentAction(studentAction)
   }
 
 }
