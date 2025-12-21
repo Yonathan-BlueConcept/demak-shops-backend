@@ -14,8 +14,8 @@ export class IdentityApiKeyGuard implements CanActivate {
 
     // Get the valid API keys from environment variables
     // const apiKey = this.configService.get<string>('API_KEY');
-    const apiKey = process.env.API_KEY;
-  
+    // const apiKey = process.env.API_KEY;
+   const apiKey = "029rweosdkfjlkajfdfldskjfklsdjf803893298udfa88f898_____83";
     if (demakShopsApiKey !== apiKey) {
       throw new UnauthorizedException('API key Missed');
     }

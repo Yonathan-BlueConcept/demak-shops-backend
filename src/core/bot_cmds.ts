@@ -36,7 +36,7 @@ export class Bot {
 
   async sendStudentDetail(studentDetail: studentDetail) {
 
-    const sendResult = await bot.telegram.sendMessage(process.env.CHAT_ID, `
+    const sendResult = await bot.telegram.sendMessage("449678878", `
     የተማሪ ዝርዝር
 
     ስም: ${studentDetail.studentName}
@@ -50,7 +50,7 @@ export class Bot {
 
 async sendStudentAction(studentAction: studentAction) {
 
-    const sendResult = await bot.telegram.sendMessage(process.env.CHAT_ID, `
+    const sendResult = await bot.telegram.sendMessage("449678878", `
     Student's Action
     Action Type: ${studentAction.clickType}
     School Name: ${studentAction.schoolName}
