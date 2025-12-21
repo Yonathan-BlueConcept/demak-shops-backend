@@ -11,7 +11,7 @@ import { studentAction } from 'src/edu/dto/student_action';
 dotenv.config();
 
 
-const bot = new Telegraf(process.env.BOT_TOKEN || '');
+const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAHY"|| '');
 
 export class Bot {
 
