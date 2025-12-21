@@ -1,4 +1,6 @@
 export type studentDetail={
-name:string;
-phoneNumber:string;
+ studentName: string;
+  phoneNumber: string;
+  schoolName: string;
+  courseTitle: string;
 }

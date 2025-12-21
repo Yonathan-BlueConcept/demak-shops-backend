@@ -38,8 +38,10 @@ export class Bot {
     const sendResult = await bot.telegram.sendMessage(process.env.CHAT_ID, `
     የተማሪ ዝርዝር
 
-    ስም: ${studentDetail.name}
+    ስም: ${studentDetail.studentName}
     ስልክ ቁጥር: ${studentDetail.phoneNumber}
+    ትምህርት ቤት: ${studentDetail.schoolName}
+    የትምህርት ስም: ${studentDetail.courseTitle}
     `);
 
     return sendResult;
