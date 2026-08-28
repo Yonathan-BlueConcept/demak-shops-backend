@@ -12,7 +12,9 @@ export class Bot implements OnModuleInit, OnModuleDestroy {
   private readonly bot: Telegraf;
 
   constructor(private readonly configService: ConfigService) {
-    const token = this.configService.get<string>('BOT_TOKEN');
+    // const token = this.configService.get<string>('BOT_TOKEN');
+
+    const token = "7624440571:AAHpqr-rK8OVfotaF9GDPhPbpTi2OQj0PWU";
 
     if (!token) {
       throw new Error('BOT_TOKEN is not defined in the environment variables.');
