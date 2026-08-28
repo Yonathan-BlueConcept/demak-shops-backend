@@ -7,8 +7,8 @@ import { studentDetail } from 'src/edu/dto/student_deatil';
 import { studentAction } from 'src/edu/dto/student_action';
 
 @Injectable()
-export class BotService implements OnModuleInit, OnModuleDestroy {
-  private readonly logger = new Logger(BotService.name);
+export class Bot implements OnModuleInit, OnModuleDestroy {
+  private readonly logger = new Logger(Bot.name);
   private readonly bot: Telegraf;
 
   constructor(private readonly configService: ConfigService) {
@@ -22,27 +22,22 @@ export class BotService implements OnModuleInit, OnModuleDestroy {
     this.registerHandlers();
   }
 
-  // NestJS Lifecycle Hook: Starts the bot when the module initializes
   async onModuleInit() {
     this.bot.launch();
     this.logger.log('Telegram Bot successfully launched.');
   }
 
-  // NestJS Lifecycle Hook: Gracefully stops the bot when the app shuts down
   onModuleDestroy() {
     this.bot.stop();
     this.logger.log('Telegram Bot stopped.');
   }
 
-  // Register command and event handlers inside constructor
   private registerHandlers() {
     this.bot.command('start', (ctx) => {
       this.logger.log(`Start command triggered by Chat ID: ${ctx.chat.id}`);
       return ctx.reply(
         'እባክዎ ስልክዎን እንድመዘግብ ይፍቀዱልኝ 😊',
-        Markup.keyboard([
-          Markup.button.contactRequest('ስልኬን መዝግብ'),
-        ])
+        Markup.keyboard([Markup.button.contactRequest('ስልኬን መዝግብ')])
           .resize()
           .oneTime()
       );
@@ -86,9 +81,7 @@ School Name: ${studentAction.schoolName}
 
   async sendItems(itemsList: ItemsListDto, chatId: number) {
     const itemsFormatted = itemsList.items
-      .map(
-        (item) => `title: ${item.title}\nprice: ${item.price}\n------------------------------`
-      )
+      .map((item) => `title: ${item.title}\nprice: ${item.price}\n------------------------------`)
       .join('\n');
 
     const message = `
@@ -102,5 +95,3 @@ phoneNumber: ${itemsList.phoneNumber} 👈 ይህን ስልክ ተጭነው ያ�
     return await this.bot.telegram.sendMessage(chatId, message);
   }
 }
-
-export { BotService as Bot };
