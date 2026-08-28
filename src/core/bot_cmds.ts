@@ -1,93 +1,44 @@
+import { Injectable, OnModuleInit, OnModuleDestroy, Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { Markup, Telegraf } from 'telegraf';
-import * as dotenv from 'dotenv';
 import { ItemDto } from 'src/bot/dtos/items.dto';
 import { ItemsListDto } from 'src/bot/dtos/items_list.dto';
 import { studentDetail } from 'src/edu/dto/student_deatil';
-// import { AppOwnerService } from 'src/app-owner/app-owner.service';
 import { studentAction } from 'src/edu/dto/student_action';
 
+@Injectable()
+export class BotService implements OnModuleInit, OnModuleDestroy {
+  private readonly logger = new Logger(BotService.name);
+  private readonly bot: Telegraf;
 
+  constructor(private readonly configService: ConfigService) {
+    const token = this.configService.get<string>('BOT_TOKEN');
 
-dotenv.config();
+    if (!token) {
+      throw new Error('BOT_TOKEN is not defined in the environment variables.');
+    }
 
-
-const bot = new Telegraf("7344809048:AAEZ56dA3ZJMyUBnbEX6FbKhHm05e28oAHY");
-
-export class Bot {
-
-
-  botLaunch() {
-    bot.launch();
+    this.bot = new Telegraf(token);
+    this.registerHandlers();
   }
 
-
-  async sendItem(item: ItemDto, chatId: number) {
-
-    const sendResult = await bot.telegram.sendMessage(chatId, `
-    በደንበኛዎ የታዘዘ እቃ
-
-    title:  ${item.title}
-    price:  ${item.price}
-    ownerName: ${item.ownerName}
-    `);
-
-    return sendResult;
+  // NestJS Lifecycle Hook: Starts the bot when the module initializes
+  async onModuleInit() {
+    this.bot.launch();
+    this.logger.log('Telegram Bot successfully launched.');
   }
 
-  async sendStudentDetail(studentDetail: studentDetail) {
-
-    const sendResult = await bot.telegram.sendMessage("449678878", `
-    የተማሪ ዝርዝር
-
-    ስም: ${studentDetail.studentName}
-    ስልክ ቁጥር: ${studentDetail.phoneNumber}
-    ትምህርት ቤት: ${studentDetail.schoolName}
-    የትምህርት ስም: ${studentDetail.courseTitle}
-    `);
-
-    return sendResult;
+  // NestJS Lifecycle Hook: Gracefully stops the bot when the app shuts down
+  onModuleDestroy() {
+    this.bot.stop();
+    this.logger.log('Telegram Bot stopped.');
   }
 
-async sendStudentAction(studentAction: studentAction) {
-
-    const sendResult = await bot.telegram.sendMessage("449678878", `
-    Student's Action
-    Action Type: ${studentAction.clickType}
-    School Name: ${studentAction.schoolName}
-    `);
-
-    return sendResult;
-  }
-
-  async sendItems(itemsList: ItemsListDto, chatId: number) {
-
-    const titleAndPrice = [];
-
-    itemsList.items.forEach((item) => {
-      titleAndPrice.push(`
-        title:  ${item.title}
-        price:  ${item.price}
-    ------------------------------
-    `)
-    })
-
-
-    const sendResult = await bot.telegram.sendMessage(chatId, `
-      በደንበኛዎ የታዘዙ እቃዎች
-      
-      ${titleAndPrice}
-
-      phoneNumber: ${itemsList.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
-      `);
-
-    return sendResult;
-  }
-
-
-  async askPhoneNumber() {
-    bot.command('start', (ctx) => {
-      console.log("Chat ID:", ctx.chat.id);
-      ctx.reply(
+  // Register command and event handlers inside constructor
+  private registerHandlers() {
+    this.bot.command('start', (ctx) => {
+      this.logger.log(`Start command triggered by Chat ID: ${ctx.chat.id}`);
+      return ctx.reply(
         'እባክዎ ስልክዎን እንድመዘግብ ይፍቀዱልኝ 😊',
         Markup.keyboard([
           Markup.button.contactRequest('ስልኬን መዝግብ'),
@@ -95,45 +46,59 @@ async sendStudentAction(studentAction: studentAction) {
           .resize()
           .oneTime()
       );
-    }
-
-    );
+    });
   }
 
-  // async phoneNumberAccessSuccessful(appOwnerService: AppOwnerService) {
-  //   bot.on('contact', async (ctx) => {
-  //     const phoneNumber = ctx.message.contact.phone_number;
-  //     const chatId = ctx.chat.id;
+  async sendItem(item: ItemDto, chatId: number) {
+    const message = `
+በደንበኛዎ የታዘዘ እቃ
 
+title: ${item.title}
+price: ${item.price}
+ownerName: ${item.ownerName}
+    `.trim();
 
-  //     console.log("chat Id ", chatId);
-  //     console.log("Phone number ", phoneNumber);
-  //     try {
-  //       const result = await appOwnerService.updateChatId(phoneNumber, chatId);
-  //       if (result) {
-  //         ctx.reply(`አመሰግናለሁ, ተመዝግበዋል: ${phoneNumber}`);
-  //       }
-  //     } catch (error) {
-  //       ctx.reply(`አልተመዘገቡም። አገልግሎቱን ለማግኘት  በዚህ ቁጥር በመደወል መመዝገብ ይችላሉ፡፡ +251931726281`);
-  //       console.log("Errro ... ", error)
-  //     }
-
-
-
-
-  //     // You can save the phone number or use it as needed
-  //   });
-  // }
-
-
-
-
-  botStop() {
-    // Enable graceful stop
-    process.once('SIGINT', () => bot.stop('SIGINT'));
-    process.once('SIGTERM', () => bot.stop('SIGTERM'));
+    return await this.bot.telegram.sendMessage(chatId, message);
   }
 
+  async sendStudentDetail(studentDetail: studentDetail) {
+    const message = `
+የተማሪ ዝርዝር
 
+ስም: ${studentDetail.studentName}
+ስልክ ቁጥር: ${studentDetail.phoneNumber}
+ትምህርት ቤት: ${studentDetail.schoolName}
+የትምህርት ስም: ${studentDetail.courseTitle}
+    `.trim();
 
+    return await this.bot.telegram.sendMessage('449678878', message);
+  }
+
+  async sendStudentAction(studentAction: studentAction) {
+    const message = `
+Student's Action
+Action Type: ${studentAction.clickType}
+School Name: ${studentAction.schoolName}
+    `.trim();
+
+    return await this.bot.telegram.sendMessage('449678878', message);
+  }
+
+  async sendItems(itemsList: ItemsListDto, chatId: number) {
+    const itemsFormatted = itemsList.items
+      .map(
+        (item) => `title: ${item.title}\nprice: ${item.price}\n------------------------------`
+      )
+      .join('\n');
+
+    const message = `
+በደንበኛዎ የታዘዙ እቃዎች
+
+${itemsFormatted}
+
+phoneNumber: ${itemsList.phoneNumber} 👈 ይህን ስልክ ተጭነው ያናግሩ
+    `.trim();
+
+    return await this.bot.telegram.sendMessage(chatId, message);
+  }
 }
