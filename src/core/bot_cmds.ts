@@ -102,3 +102,5 @@ phoneNumber: ${itemsList.phoneNumber} 👈 ይህን ስልክ ተጭነው ያ�
     return await this.bot.telegram.sendMessage(chatId, message);
   }
 }
+
+export { BotService as Bot };
